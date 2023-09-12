@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uploder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <div>
+        <span>select a file type:</span>
+        <select id="drop-down">
+          <option value=".pdf">.pdf</option>
+          <option value=".png">.png</option>
+          <option value=".jpeg">.jpeg</option>
+        </select>
+      </div>
+      <span>
+        <span>Select file to uplaod</span>
+        <input type="file" id="file-input" accept=".pdf" class="file-input" />
+      </span>
+      <div id="upload_status"></div>
+      <div class="modal" id="modal-id">
+        <div class="modal-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 30.398438 2 L 7 2 L 7 48 L 43 48 L 43 14.601563 Z M 30 15 L 30 4.398438 L 40.601563 15 Z"
+            ></path>
+          </svg>
+          <p id="file-name"></p>
+
+          <button class="btn" id="preview">preview</button>
+          <button class="btn" id="submit">submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
